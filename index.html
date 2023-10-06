@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/svg/icon.svg"
+      type="image/x-icon"
+    />
+    <title>Ziegel</title>
+  </head>
+  <body>
+    <!-- NAVBAR AND HERO -->
+    <section
+      class="after:content-[''] after:bg-[#141328de] after:absolute after:h-full after:w-full after:top-0 after:left-0 z-10 flex flex-col md:h-screen relative"
+    >
+      <!-- BACK GROUND VIDEO -->
+      <video
+        class="absolute w-full h-full end-0 z-[-1] top-0 object-cover"
+        src="./assets/video/hero_video.mp4"
+        muted
+        loop
+        autoplay
+      ></video>
+      <!-- NAVBAR -->
+      <div class="container xl:max-w-[1512px] m-auto px-3">
+        <div class="flex items-center justify-between py-6 relative z-10">
+          <a href="#">
+            <img
+              src="./assets/img/svg/ZIEGEL_logo.svg"
+              alt="logo"
+              class="w-[100px] sm:w-[174px]"
+            />
+          </a>
+          <ul
+            id="navMenu"
+            class="md:flex md:space-x-6 xl:space-x-12 font-semibold flex backdrop-blur-lg gap-5 md:gap-0 md:flex-row bg-black md:bg-transparent min-h-screen md:min-h-fit justify-center items-center w-full md:relative fixed left-[-100%] md:start-0 top-0 flex-col h-full ps-0 transition-all duration-300 ease-linear"
+          >
+            <li class="relative">
+              <a
+                href="#"
+                class="ff_Red_Hat_Display font-normal text-lg md:text-base text-white before:w-0 before:transition-all before:duration-300 before:ease-linear before:h-[2px] w-0 before:rounded-full transition-all duration-300 hover:before:w-full before:absolute before:bottom-[-3%] before:bg-white"
+                >Home</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                href="#about"
+                class="ff_Red_Hat_Display font-normal text-lg md:text-base text-white before:w-0 before:transition-all before:duration-300 before:ease-linear before:h-[2px] w-0 before:rounded-full transition-all duration-300 hover:before:w-full before:absolute before:bottom-[-3%] before:bg-white"
+                >About</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                href="#team"
+                class="ff_Red_Hat_Display font-normal text-lg md:text-base text-white before:w-0 before:transition-all before:duration-300 before:ease-linear before:h-[2px] w-0 before:rounded-full transition-all duration-300 hover:before:w-full before:absolute before:bottom-[-3%] before:bg-white"
+                >Team</a
+              >
+            </li>
+            <li
+              class="ff_Red_Hat_Display font-normal md:hidden md:text-base text-white border border-white rounded-full py-3.5 px-[18px] flex items-center whitespace-nowrap gap-2.5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M12.0219 2C10.7087 2 9.4083 2.25866 8.19505 2.7612C6.98179 3.26375 5.8794 4.00035 4.95081 4.92893C3.07545 6.8043 2.02188 9.34784 2.02188 12C2.02188 14.6522 3.07545 17.1957 4.95081 19.0711C5.8794 19.9997 6.98179 20.7362 8.19505 21.2388C9.4083 21.7413 10.7087 22 12.0219 22C14.674 22 17.2176 20.9464 19.0929 19.0711C20.9683 17.1957 22.0219 14.6522 22.0219 12C22.0219 10.6868 21.7632 9.38642 21.2607 8.17317C20.7581 6.95991 20.0215 5.85752 19.0929 4.92893C18.1644 4.00035 17.062 3.26375 15.8487 2.7612C14.6355 2.25866 13.3351 2 12.0219 2ZM7.09188 18.28C7.52188 17.38 10.1419 16.5 12.0219 16.5C13.9019 16.5 16.5219 17.38 16.9519 18.28C15.5513 19.396 13.8128 20.0026 12.0219 20C10.1619 20 8.45188 19.36 7.09188 18.28ZM18.3819 16.83C16.9519 15.09 13.4819 14.5 12.0219 14.5C10.5619 14.5 7.09188 15.09 5.66188 16.83C4.59807 15.4446 4.02155 13.7467 4.02188 12C4.02188 7.59 7.61188 4 12.0219 4C16.4319 4 20.0219 7.59 20.0219 12C20.0219 13.82 19.4019 15.5 18.3819 16.83ZM12.0219 6C10.0819 6 8.52188 7.56 8.52188 9.5C8.52188 11.44 10.0819 13 12.0219 13C13.9619 13 15.5219 11.44 15.5219 9.5C15.5219 7.56 13.9619 6 12.0219 6ZM12.0219 11C11.6241 11 11.2425 10.842 10.9612 10.5607C10.6799 10.2794 10.5219 9.89782 10.5219 9.5C10.5219 9.10218 10.6799 8.72064 10.9612 8.43934C11.2425 8.15804 11.6241 8 12.0219 8C12.4197 8 12.8012 8.15804 13.0825 8.43934C13.3638 8.72064 13.5219 9.10218 13.5219 9.5C13.5219 9.89782 13.3638 10.2794 13.0825 10.5607C12.8012 10.842 12.4197 11 12.0219 11Z"
+                  fill="white"
+                />
+              </svg>
+              Ziegel Connect
+            </li>
+          </ul>
+          <div class="flex items-center gap-4 sm:gap-[30px]">
+            <button
+              class="ff_Red_Hat_Display font-normal hidden text-base text-white border border-white rounded-full py-3.5 px-[18px] md:flex items-center whitespace-nowrap gap-2.5 hover:bg-white hover:text-black15 transition-all duration-300 ease-linear group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M12.0219 2C10.7087 2 9.4083 2.25866 8.19505 2.7612C6.98179 3.26375 5.8794 4.00035 4.95081 4.92893C3.07545 6.8043 2.02188 9.34784 2.02188 12C2.02188 14.6522 3.07545 17.1957 4.95081 19.0711C5.8794 19.9997 6.98179 20.7362 8.19505 21.2388C9.4083 21.7413 10.7087 22 12.0219 22C14.674 22 17.2176 20.9464 19.0929 19.0711C20.9683 17.1957 22.0219 14.6522 22.0219 12C22.0219 10.6868 21.7632 9.38642 21.2607 8.17317C20.7581 6.95991 20.0215 5.85752 19.0929 4.92893C18.1644 4.00035 17.062 3.26375 15.8487 2.7612C14.6355 2.25866 13.3351 2 12.0219 2ZM7.09188 18.28C7.52188 17.38 10.1419 16.5 12.0219 16.5C13.9019 16.5 16.5219 17.38 16.9519 18.28C15.5513 19.396 13.8128 20.0026 12.0219 20C10.1619 20 8.45188 19.36 7.09188 18.28ZM18.3819 16.83C16.9519 15.09 13.4819 14.5 12.0219 14.5C10.5619 14.5 7.09188 15.09 5.66188 16.83C4.59807 15.4446 4.02155 13.7467 4.02188 12C4.02188 7.59 7.61188 4 12.0219 4C16.4319 4 20.0219 7.59 20.0219 12C20.0219 13.82 19.4019 15.5 18.3819 16.83ZM12.0219 6C10.0819 6 8.52188 7.56 8.52188 9.5C8.52188 11.44 10.0819 13 12.0219 13C13.9619 13 15.5219 11.44 15.5219 9.5C15.5219 7.56 13.9619 6 12.0219 6ZM12.0219 11C11.6241 11 11.2425 10.842 10.9612 10.5607C10.6799 10.2794 10.5219 9.89782 10.5219 9.5C10.5219 9.10218 10.6799 8.72064 10.9612 8.43934C11.2425 8.15804 11.6241 8 12.0219 8C12.4197 8 12.8012 8.15804 13.0825 8.43934C13.3638 8.72064 13.5219 9.10218 13.5219 9.5C13.5219 9.89782 13.3638 10.2794 13.0825 10.5607C12.8012 10.842 12.4197 11 12.0219 11Z"
+                  fill="white"
+                  class="group-hover:fill-black15 transition-all duration-300 ease-linear"
+                />
+              </svg>
+              Ziegel Connect
+            </button>
+            <a href="#">
+              <svg
+                class="hover:scale-[1.3] transition-all duration-300 ease-linear"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <g>
+                  <path
+                    d="M17.7356 12.0001C17.7329 11.1036 17.6368 10.2099 17.449 9.3334H19.849C19.7254 8.96777 19.5761 8.61133 19.4023 8.26673H17.169C16.7491 6.8641 16.098 5.54146 15.2423 4.3534C14.6956 4.12353 14.1256 3.95365 13.5423 3.84673C14.7145 5.10622 15.5993 6.60519 16.1356 8.24007H12.5423V3.7334H11.5423V8.24673H7.94897C8.48635 6.6089 9.37352 5.10753 10.549 3.84673C9.96815 3.95187 9.40041 4.11951 8.85564 4.34673C7.99661 5.52981 7.34094 6.8479 6.91564 8.24673H4.66897C4.49202 8.59762 4.34051 8.96078 4.21564 9.3334H6.63564C6.44783 10.2099 6.35176 11.1036 6.34897 12.0001C6.35081 12.9806 6.46262 13.9578 6.6823 14.9134H4.3223C4.46022 15.2871 4.6251 15.6503 4.81564 16.0001H6.96897C7.37711 17.2773 7.98218 18.4829 8.7623 19.5734C9.32095 19.813 9.90455 19.9897 10.5023 20.1001C9.41425 18.9132 8.57748 17.5186 8.0423 16.0001H11.549V20.2267H12.549V16.0001H16.0423C15.5053 17.5192 14.6662 18.9139 13.5756 20.1001C14.1762 19.9858 14.7621 19.8047 15.3223 19.5601C16.1012 18.4737 16.7062 17.2726 17.1156 16.0001H19.249C19.4386 15.6567 19.6035 15.3003 19.7423 14.9334H17.3756C17.6058 13.9723 17.7266 12.9883 17.7356 12.0001ZM11.5423 14.9134H7.71564C7.24628 13.0786 7.2257 11.1578 7.65564 9.3134H11.5423V14.9134ZM16.369 14.9134H12.5423V9.3334H16.429C16.6205 10.2092 16.7144 11.1036 16.709 12.0001C16.7144 12.9814 16.6002 13.9597 16.369 14.9134Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M12.0425 1.33325C9.9328 1.33325 7.87051 1.95884 6.11638 3.13091C4.36226 4.30298 2.99508 5.96888 2.18775 7.91796C1.38042 9.86704 1.16918 12.0118 1.58076 14.0809C1.99233 16.15 3.00823 18.0506 4.49999 19.5424C5.99175 21.0342 7.89237 22.0501 9.9615 22.4616C12.0306 22.8732 14.1753 22.662 16.1244 21.8546C18.0735 21.0473 19.7394 19.6801 20.9115 17.926C22.0835 16.1719 22.7091 14.1096 22.7091 11.9999C22.7091 9.17094 21.5853 6.45783 19.5849 4.45745C17.5845 2.45706 14.8714 1.33325 12.0425 1.33325ZM12.0425 21.3333C10.1965 21.3333 8.392 20.7859 6.85714 19.7603C5.32228 18.7347 4.12601 17.2771 3.41959 15.5716C2.71317 13.8662 2.52834 11.9896 2.88847 10.1791C3.2486 8.36859 4.13751 6.70554 5.4428 5.40025C6.74809 4.09496 8.41113 3.20605 10.2216 2.84592C12.0321 2.48579 13.9087 2.67063 15.6142 3.37704C17.3196 4.08346 18.7773 5.27974 19.8028 6.8146C20.8284 8.34945 21.3758 10.154 21.3758 11.9999C21.3758 14.4753 20.3925 16.8492 18.6421 18.5996C16.8918 20.3499 14.5178 21.3333 12.0425 21.3333Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                class="hover:scale-[1.3] transition-all duration-300 ease-linear"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M19.0945 4.91006C18.1777 3.98399 17.0857 3.24973 15.8822 2.75011C14.6786 2.25049 13.3877 1.99552 12.0845 2.00006C6.62454 2.00006 2.17454 6.45006 2.17454 11.9101C2.17454 13.6601 2.63454 15.3601 3.49454 16.8601L2.09454 22.0001L7.34454 20.6201C8.79454 21.4101 10.4245 21.8301 12.0845 21.8301C17.5445 21.8301 21.9945 17.3801 21.9945 11.9201C21.9945 9.27006 20.9645 6.78006 19.0945 4.91006ZM12.0845 20.1501C10.6045 20.1501 9.15454 19.7501 7.88454 19.0001L7.58454 18.8201L4.46454 19.6401L5.29454 16.6001L5.09454 16.2901C4.27229 14.977 3.83568 13.4593 3.83454 11.9101C3.83454 7.37006 7.53454 3.67006 12.0745 3.67006C14.2745 3.67006 16.3445 4.53006 17.8945 6.09006C18.662 6.85402 19.2702 7.76272 19.6839 8.76348C20.0976 9.76425 20.3086 10.8372 20.3045 11.9201C20.3245 16.4601 16.6245 20.1501 12.0845 20.1501ZM16.6045 13.9901C16.3545 13.8701 15.1345 13.2701 14.9145 13.1801C14.6845 13.1001 14.5245 13.0601 14.3545 13.3001C14.1845 13.5501 13.7145 14.1101 13.5745 14.2701C13.4345 14.4401 13.2845 14.4601 13.0345 14.3301C12.7845 14.2101 11.9845 13.9401 11.0445 13.1001C10.3045 12.4401 9.81454 11.6301 9.66454 11.3801C9.52454 11.1301 9.64454 11.0001 9.77454 10.8701C9.88454 10.7601 10.0245 10.5801 10.1445 10.4401C10.2645 10.3001 10.3145 10.1901 10.3945 10.0301C10.4745 9.86006 10.4345 9.72006 10.3745 9.60006C10.3145 9.48006 9.81454 8.26006 9.61454 7.76006C9.41454 7.28006 9.20454 7.34006 9.05454 7.33006H8.57454C8.40454 7.33006 8.14454 7.39006 7.91454 7.64006C7.69454 7.89006 7.05454 8.49006 7.05454 9.71006C7.05454 10.9301 7.94454 12.1101 8.06454 12.2701C8.18454 12.4401 9.81454 14.9401 12.2945 16.0101C12.8845 16.2701 13.3445 16.4201 13.7045 16.5301C14.2945 16.7201 14.8345 16.6901 15.2645 16.6301C15.7445 16.5601 16.7345 16.0301 16.9345 15.4501C17.1445 14.8701 17.1445 14.3801 17.0745 14.2701C17.0045 14.1601 16.8545 14.1101 16.6045 13.9901Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <button onclick="show()" class="md:hidden text-white relative z-10">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_3942_2072)">
+                  <path
+                    d="M3 4.5H21V6.5H3V4.5ZM3 11.5H21V13.5H3V11.5ZM3 18.5H21V20.5H3V18.5Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- HERO SECTION -->
+      <div
+        class="container xl:max-w-[1452px] flex-grow flex items-center justify-center m-auto px-3 relative z-[1] py-32 sm:py-40 md:py-0"
+      >
+        <div class="w-full md:w-10/12 lg:w-8/12 xl:w-6/12">
+          <h1
+            class="ff_Red_Hat_Display text-4xl md:text-5xl lg:text-[64px] font-semibold text-white lg:leading-[63.5px] text-center"
+          >
+            Descubre el método definitivo para vender tu
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-[#A876DA] to-[#6374E0]"
+              >propiedad</span
+            >
+          </h1>
+          <p
+            class="ff_Red_Hat_Display text-white text-2xl sm:text-3xl lg:text-[32px] font-normal xl:px-7 mt-2 text-center"
+          >
+            Conoce gratis y en unos simples clicks el valor de referencia por el
+            cual deberías comercializar tu inmueble.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section class="py-12 bg-white9 overflow-hidden" id="about">
+      <div class="container xl:max-w-[1452px] m-auto px-3 lg:mb-20">
+        <div class="flex items-center gap-3 sm:gap-10 md:gap-20 lg:gap-[131px]">
+          <a href="#">
+            <img
+              src="./assets/img/webp/fotocasa.webp"
+              alt="fotocasa"
+              class="w-full"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="./assets/img/webp/casafar.webp"
+              alt="casafar"
+              class="w-full"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="./assets/img/webp/idealista.webp"
+              alt="idealista"
+              class="w-full"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="./assets/img/webp/JamesEdition.webp"
+              alt="JamesEdition"
+              class="w-full"
+            />
+          </a>
+          <a href="#">
+            <img src="./assets/img/webp/Meta.webp" alt="Meta" class="w-100" />
+          </a>
+        </div>
+        <div
+          class="flex justify-center flex-wrap xl:gap-[80px] py-12 md:py-16 xl:py-24 mt-lg-7"
+        >
+          <div
+            class="max-w-[342px] sm:w-6/12 md:w-4/12 xl:w-1/4 px-3 flex flex-col items-center"
+          >
+            <h4
+              class="ff_Red_Hat_Display text-white font-bold text-2xl border border-1 border-solid border-green mb-4 w-[56px] h-[56px] bg-black flex justify-center items-center rounded-full"
+            >
+              1
+            </h4>
+            <p
+              class="ff_Red_Hat_Display text-[#151515] text-center font-normal text-xl lg:text-2xl tracking-[-0.48px] leading-[110.8%]"
+            >
+              Presentamos tu propiedad con un marketing excepcional para
+              encontrar el mejor resultado
+            </p>
+          </div>
+          <div
+            class="max-w-[342px] sm:w-6/12 md:w-4/12 xl:w-1/4 xl:px-5 px-3 flex flex-col items-center mt-7 sm:mt-0"
+          >
+            <h4
+              class="ff_Red_Hat_Display text-white font-bold text-2xl border border-1 border-solid border-green mb-4 w-[56px] h-[56px] bg-black flex justify-center items-center rounded-full"
+            >
+              2
+            </h4>
+            <p
+              class="ff_Red_Hat_Display text-black15 text-center font-normal text-xl lg:text-2xl tracking-[-0.48px] leading-[110.8%]"
+            >
+              Gracias a nuestra tecnología, cruzamos tu inmueble con miles de
+              compradores
+            </p>
+          </div>
+          <div
+            class="max-w-[342px] sm:w-6/12 md:w-4/12 xl:w-1/4 px-3 flex flex-col items-center mt-7 md:mt-0"
+          >
+            <h4
+              class="ff_Red_Hat_Display text-white font-bold text-2xl border border-1 border-solid border-green mb-4 w-[56px] h-[56px] bg-black flex justify-center items-center rounded-full"
+            >
+              3
+            </h4>
+            <p
+              class="ff_Red_Hat_Display text-black15 text-center font-normal text-xl lg:text-2xl tracking-[-0.48px] leading-[110.8%]"
+            >
+              Nos encargamos de todo el proceso de inicio a fin gracias a
+              nuestro soporte integral
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-wrap justify-center md:justify-between lg:justify-center items-center lg:gap-16 xl:gap-40"
+        >
+          <div
+            class="w-6/12 sm:w-4/12 md:w-3/12 z-[1] relative before:content-[''] xl:before:bg-phone-shadow before:w-[588px] before:h-[597px] before:absolute before:left-[-110px] before:bottom-[-70px] md:before:bottom-[-110px] before:bg-no-repeat before:bg-[100% 100%] before:bg-center before:z-[-1]"
+          >
+            <img
+              src="./assets/img/webp/phone.webp"
+              alt="phone"
+              class="w-full"
+            />
+          </div>
+          <div
+            class="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12 sm:px-3 text-center md:text-start md:mt-0 mt-7"
+          >
+            <p
+              class="ff_Red_Hat_Display font-extrabold text-3xl sm:text-4xl lg:text-[40px] text-black15 tracking-[-0.8px] leading-[100%]"
+            >
+              Posiblemente somos la marca inmobiliaria no franquicia de mayor
+              crecimiento
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-[#A876DA] to-[#6374E0]"
+                >nacional</span
+              >
+            </p>
+            <p
+              class="ff_Red_Hat_Display font-normal text-2xl sm:text-3xl lg:text-[32px] text-black15 tracking-[-0.64px] lg:my-6 my-3 lg:pb-3"
+            >
+              Nuestros profesionales cuentan con tecnología exclusiva
+              desarrollada por Ziegel.
+              <span class="font-bold">¡Marquemos la diferencia!</span>
+            </p>
+            <button
+              class="ff_Red_Hat_Display font-bold text-white text-base sm:text-xl lg:text-2xl bg-black hover:bg-transparent hover:text-black15 transition-all duration-300 ease-linear py-3 px-6 border border-1 border-solid border-green"
+            >
+              Conoce nuestro plan de 30 días
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT PHP SECTION -->
+    <section id="team">
+      <div class="grid gap-1 sm:gap-x-[6px] sm:gap-y-[5px]">
+        <div
+          class="sm:col-start-[1] sm:col-end-[5] row-start-[1] row-end-[3] col-start-[1] col-end-[10] overflow-hidden"
+        >
+          <img
+            src="./assets/img/webp/girls.webp"
+            alt="girls"
+            class="w-full object-cover h-full hover:scale-[1.05] transition-all duration-300 ease-linear"
+          />
+        </div>
+        <div
+          class="sm:col-start-[5] sm:col-end-[9] row-start-[1] row-end-[2] col-start-[10] col-end-[20] overflow-hidden"
+        >
+          <img
+            src="./assets/img/webp/twoman.webp"
+            alt="man"
+            class="w-full object-cover h-full hover:scale-[1.05] transition-all duration-300 ease-linear"
+          />
+        </div>
+        <div
+          class="sm:col-start-[5] sm:col-end-[9] row-start-[2] row-end-[3] col-start-[10] col-end-[20] overflow-hidden"
+        >
+          <img
+            src="./assets/img/webp/peoples.webp"
+            alt="peoples"
+            class="w-full object-cover h-full hover:scale-[1.05] transition-all duration-300 ease-linear"
+          />
+        </div>
+        <div
+          class="sm:col-start-[9] sm:col-end-[15] sm:row-start-[1] sm:row-end-[3] row-start-[3] row-end-[5] col-start-[10] col-end-[20] overflow-hidden"
+        >
+          <img
+            src="./assets/img/webp/ledcenter.webp"
+            alt="ledcenter"
+            class="w-full object-cover h-full hover:scale-[1.05] transition-all duration-300 ease-linear"
+          />
+        </div>
+        <div
+          class="sm:col-start-[15] sm:col-end-[20] sm:row-start-[1] sm:row-end-[2] row-start-[3] row-end-[4] col-start-[1] col-end-[10] overflow-hidden"
+        >
+          <img
+            src="./assets/img/webp/show.webp"
+            alt="show"
+            class="w-full object-cover h-full hover:scale-[1.05] transition-all duration-300 ease-linear"
+          />
+        </div>
+        <div
+          class="sm:col-start-[15] sm:col-end-[20] sm:row-start-[2] sm:row-end-[3] row-start-[4] row-end-[5] col-start-[1] col-end-[10] overflow-hidden"
+        >
+          <img
+            src="./assets/img/webp/team.webp"
+            alt="team"
+            class="w-full object-cover h-full hover:scale-[1.05] transition-all duration-300 ease-linear"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- JavaScript to handle the responsive navigation menu -->
+    <script type="module" src="/main.js"></script>
+    <script>
+      function show() {
+        document.getElementById("navMenu").classList.toggle("!start-0");
+      }
+    </script>
+    <!-- slick slider js link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- slick slider -->
+    <script>
+      $(".responsive").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
+    <!-- tailwind css -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </body>
+</html>
