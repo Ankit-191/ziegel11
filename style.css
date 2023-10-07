@@ -9,7 +9,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 /* Track */
@@ -19,10 +19,42 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: linear-gradient(
+    78deg,
+    #a876da 10.53%,
+    #857de3 30.94%,
+    #6374e0 60.55%
+  );
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.dropdown-content {
+  display: none;
+  top: 30px;
+  right: 0;
+  transform: translateX(50%);
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content p {
+  transition: all 0.3s linear;
+}
+.dropdown-content p:hover {
+  background: linear-gradient(
+    78deg,
+    #a876da 10.53%,
+    #857de3 30.94%,
+    #6374e0 60.55%
+  );
+  color: white;
 }
